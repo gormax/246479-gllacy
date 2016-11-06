@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
       <div class="container">
-        <a href="index.html"><img src="http://placehold.it/150x100" alt="Логотип компании"></a>
+        <a href="index.html"><img src="img/logo.png" width="100" height="50" alt="Логотип компании"></a>
         <nav class="main-nav">
           <ul class="main-menu">
             <li class="current-item">
@@ -90,12 +91,12 @@
               <option value="fatness">по жирности</option>
             </select>
           </div>
-          <div class="catalog-price-range">
-            <label for="price-range">Сортировка:</label>
+          <label class="catalog-price-range">
+            Сортировка:
             <input type="range" id="price-range" name="price-range" min="0" max="700">
-          </div>
-          <div class="catalog-fatness-select">
-            <label for="fatness-select">Жирность:</label>
+          </label>
+          <label class="catalog-fatness-select">
+            Жирность:
             <div>
               <input type="radio" id="fatness-select" name="fatness-select" value="0">
               0%
@@ -112,9 +113,9 @@
               <input type="radio" id="fatness-select" name="fatness-select" value="31">
               выше 30%
             </div>
-          </div>
-          <div class="catalog-filler-select">
-            <label for="filler-select">Наполнители:</label>
+          </label>
+          <label class="catalog-filler-select">
+            Наполнители:
             <div>
               <input type="checkbox" id="filler-select" name="chocolate" checked>
               шоколадные
@@ -135,7 +136,7 @@
               <input type="checkbox" id="filler-select" name="jam">
               джемы
             </div>
-          </div>
+          </label>
           <button type="submit">
              Применить
           </button>
@@ -144,120 +145,120 @@
 
         <section class="item-list">
 
-          <article class="item item-1">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
-              <a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a>
+              <img src="img/cat_ic_1_900.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+              <figcaption><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">310 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-2">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочно-кофейное с кусочками шоколада">
-              <a href="#">Сливочно-кофейное с кусочками шоколада</a>
+              <img src="img/cat_ic_2_900.png" alt="Сливочно-кофейное с кусочками шоколада">
+              <figcaption><a href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">380 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-3">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочное-клубничное с присыпкой из белого шоколада">
-              <a href="#">Сливочное-клубничное с присыпкой из белого шоколада</a>
+              <img src="img/cat_ic_3_900.png" alt="Сливочное-клубничное с присыпкой из белого шоколада">
+              <figcaption><a href="#">Сливочное-клубничное с присыпкой из белого шоколада</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">355 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-4">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочное крем-брюле с карамельной подливкой">
-              <a href="#">Сливочное крем-брюле с карамельной подливкой</a>
+              <img src="img/cat_ic_4_900.png" alt="Сливочное крем-брюле с карамельной подливкой">
+              <figcaption><a href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">415 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-5">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочное с брусничным джемом">
-              <a href="#">Сливочное с брусничным джемом</a>
+              <img src="img/cat_ic_5_900.png" alt="Сливочное с брусничным джемом">
+              <figcaption><a href="#">Сливочное с брусничным джемом</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">325 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-6">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочно-черничное с цельными ягодами черники">
-              <a href="#">Сливочно-черничное с цельными ягодами черники</a>
+              <img src="img/cat_ic_6_900.png" alt="Сливочно-черничное с цельными ягодами черники">
+              <figcaption><a href="#">Сливочно-черничное с цельными ягодами черники</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">410 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-7">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочное-клубничное с присыпкой из белого шоколада">
-              <a href="#">Сливочное-лимонное с карамельной присыпкой</a>
+              <img src="img/cat_ic_7_900.png" alt="Сливочное-клубничное с присыпкой из белого шоколада">
+              <figcaption><a href="#">Сливочное-лимонное с карамельной присыпкой</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">375 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-8">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочное с шоколадной стружкой">
-              <a href="#">Сливочное с шоколадной стружкой</a>
+              <img src="img/cat_ic_8_900.png" alt="Сливочное с шоколадной стружкой">
+              <figcaption><a href="#">Сливочное с шоколадной стружкой</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">320 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-9">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочно-ванильное с кусочками шоколада">
-              <a href="#">Сливочно-ванильное с кусочками шоколада</a>
+              <img src="img/cat_ic_9_900.png" alt="Сливочно-ванильное с кусочками шоколада">
+              <figcaption><a href="#">Сливочно-ванильное с кусочками шоколада</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">440 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-10">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочное с ментоловым сиропом">
-              <a href="#">Сливочное с ментоловым сиропом</a>
+              <img src="img/cat_ic_10_900.png" alt="Сливочное с ментоловым сиропом">
+              <figcaption><a href="#">Сливочное с ментоловым сиропом</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">435 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-11">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочное с кусочками черного шоколада">
-              <a href="#">Сливочное с кусочками черного шоколада</a>
+              <img src="img/cat_ic_11_900.png" alt="Сливочное с кусочками черного шоколада">
+              <figcaption><a href="#">Сливочное с кусочками черного шоколада</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">355 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
 
-          <article class="item item-12">
+          <article class="item">
             <figure>
-              <img src="http://placehold.it/150x100" alt="Сливочное с мятным сиропом">
-              <a href="#">Сливочное с мятным сиропом</a>
+              <img src="img/cat_ic_12_900.png" alt="Сливочное с мятным сиропом">
+              <figcaption><a href="#">Сливочное с мятным сиропом</a></figcaption>
             </figure>
             <!-- <div class="hit">ХИТ</div> -->
             <div class="price">420 &#8381; / кг</div>
@@ -304,19 +305,10 @@
         </section>
 
         <section class="documents">
-          <div class="for-contractors">
-            <div class="icon-heart"></div>
-            <a href="#">Для поставщиков</a>
-          </div>
-          <div class="about-manufacturing">
-            <a href="#">О производстве</a>
-          </div>
-          <div class="docs">
-            <a href="#">Наши документы</a>
-          </div>
-          <div class="ecology">
-            <a href="#">Экологические стандарты</a>
-          </div>
+          <a class="for-contractors" href="#"><span class="icon-heart"></span>Для поставщиков</a>
+          <a class="about-manufacturing" href="#">О производстве</a>
+          <a class="docs" href="#">Наши документы</a>
+          <a class="ecology" href="#">Экологические стандарты</a>
         </section>
 
         <section class="copyright">
