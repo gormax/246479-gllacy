@@ -3,12 +3,13 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
 
     <header class="main-header">
-      <div class="container">
-        <img src="img/logo.png" width="100" height="50" alt="Логотип компании">
+      <div class="container clearfix">
+        <img class="logo-img" src="img/logo.png" alt="Логотип компании">
         <nav class="main-nav">
           <ul class="main-menu">
             <li>
@@ -40,21 +41,19 @@
           </ul>
         </nav>
 
-        <nav class="additional-nav">
-          <ul>
-            <li>
-              <a href="#">Поиск</a>
-            </li>
-            <li>
-              <a href="#">Авторизация</a>
-            </li>
-            <li>
-              <a href="#">Корзина</a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="additional-menu">
+          <li>
+            <a href="#">Поиск</a>
+          </li>
+          <li>
+            <a href="#">Авторизация</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
 
-        <div>
+        <div class="header-contacts">
           <p class="working-hours">С 10 до 20, ежедневно</p>
           <p class="telephone">8 812 450-25-25</p>
         </div>
@@ -62,14 +61,12 @@
     </header>
 
     <main>
-      <div class="container">
+      <div class="container clearfix">
         <section class="slider">
-          <form class="add-to-basket" action="https://echo.htmlacademy.ru" method="get">
-            <input type="radio" id="btn-1" name="toggle" value="item-1" checked>
-            <input type="radio" id="btn-2" name="toggle" value="item-2">
-            <input type="radio" id="btn-3" name="toggle" value="item-3">
-            <button class="button" type="submit" value="add-item">Давайте оба!</button>
-          </form>
+          
+          <input type="radio" id="btn-1" name="toggle" value="item-1" checked>
+          <input type="radio" id="btn-2" name="toggle" value="item-2">
+          <input type="radio" id="btn-3" name="toggle" value="item-3">   
 
           <div class="slider-controls">
             <label for="btn-1"></label>
@@ -78,18 +75,21 @@
           </div>
           <div class="slider-inner">
             <div class="slider-slides">
-              <figure>
-                <img src="img/index_ic_1_main_backlight.png" alt="Крем-брюле и пломбир с малиновым джемом">
-                <figcaption>Крем-брюле и пломбир с малиновым джемом</figcaption>
-              </figure>
-              <figure>
-                <img src="img/index_ic_2_main_backlight.png" alt="Шоколадный пломбир и лимонный сорбет">
-                <figcaption>Шоколадный пломбир и лимонный сорбет</figcaption>
-              </figure>
-              <figure>
-                <img src="img/index_ic_3_main_backlight.png" alt="Пломбир с помадкой и клубничный щербет">
-                <figcaption>Пломбир с помадкой и клубничный щербет</figcaption>
-              </figure>
+              <div class="slide-1">
+                <!-- <img src="img/index_ic_1_main_backlight.png" alt="Крем-брюле и пломбир с малиновым джемом"> -->
+                <div class="slide-title">Крем-брюле и пломбир с малиновым джемом</div>
+                <a class="btn slide-btn" href="#">Давайте оба!</a>
+              </div>
+              <div class="slide-2">
+                <!-- <img src="img/index_ic_2_main_backlight.png" alt="Шоколадный пломбир и лимонный сорбет"> -->
+                <div class="slide-title">Шоколадный пломбир и лимонный сорбет</div>
+                <a class="btn slide-btn" href="#">Давайте оба!</a>
+              </div>
+              <div class="slide-3">
+               <!--  <img src="img/index_ic_3_main_backlight.png" alt="Пломбир с помадкой и клубничный щербет"> -->
+               <div class="slide-title">Пломбир с помадкой и клубничный щербет</div>
+               <a class="btn slide-btn" href="#">Давайте оба!</a>
+              </div>
             </div>
           </div>
         </section>
@@ -117,7 +117,7 @@
         </section>
 
         <section class="popular-items">
-          <article class="popular-item popular-item-1">
+          <article class="popular-item">
             <figure>
               <img src="img/index_ic_1_900.png" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
               <figcaption><a href="#">Сливочное с апельсиновым джемом и цитрусовой стружкой</a></figcaption>
@@ -126,7 +126,7 @@
             <div class="price">310 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
-          <article class="popular-item popular-item-2">
+          <article class="popular-item">
             <figure>
               <img src="img/index_ic_2_900.png" alt="Сливочно-кофейное с кусочками шоколада">
               <figcaption><a href="#">Сливочно-кофейное с кусочками шоколада</a></figcaption>
@@ -135,7 +135,7 @@
             <div class="price">380 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
-          <article class="popular-item popular-item-3">
+          <article class="popular-item">
             <figure>
               <img src="img/index_ic_3_900.png" alt="Сливочное-клубничное с присыпкой из белого шоколада">
               <figcaption><a href="#">Сливочное-клубничное с присыпкой из белого шоколада</a></figcaption>
@@ -144,7 +144,7 @@
             <div class="price">355 &#8381; / кг</div>
             <a class="preview" href="#">Быстрый просмотр</a>
           </article>
-          <article class="popular-item popular-item-4">
+          <article class="popular-item">
             <figure>
               <img src="img/index_ic_4_900.png" alt="Сливочное крем-брюле с карамельной подливкой">
               <figcaption><a href="#">Сливочное крем-брюле с карамельной подливкой</a></figcaption>
@@ -156,7 +156,7 @@
         </section>
 
         <section class="shop-features">
-          <p>Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного
+          <p class="shop-definition">Магазин Глейси - это онлайн и офлайн магазин по продаже мороженного собственного
           производства на развес</p>
           <ul>
             <li>
@@ -178,18 +178,20 @@
           </ul>
         </section>
 
-        <article class="new-in-blog">
-          <h2>Новое в нашем блоге</h2>
-          <a href="#">10 cпособов сервировки фруктовых щербетов к столу</a>
-        </article>
+        <div class="blog-and-subscription clearfix">
+          <article class="new-in-blog">
+            <h2>Новое в нашем блоге</h2>
+            <a href="#">10 cпособов сервировки фруктовых щербетов к столу</a>
+          </article>
 
-        <form class="subscription" action="https://echo.htmlacademy.ru" method="post">
-          <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
-          <input type="email" name="email" placeholder="Электронная почта">
-          <button type="submit">
-            Отправить
-          </button>
-        </form>
+          <form class="subscription" action="https://echo.htmlacademy.ru" method="post">
+            <p>Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
+            <input type="email" name="email" placeholder="Электронная почта">
+            <button type="submit">
+              Отправить
+            </button>
+          </form>
+        </div>
 
         <section class="map">
           <div class="contacts">
@@ -205,13 +207,13 @@
             </p>
             <a href="#">Форма обратной связи</a>
           </div>
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=P2yFX8XnyhHfLVULa5p4LzUBDWa9x2vh&amp;width=1200&amp;height=455&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
-        </section>
+<!--           <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=P2yFX8XnyhHfLVULa5p4LzUBDWa9x2vh&amp;width=860&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
+        </section> -->
       </div>
     </main>
 
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="social">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
@@ -220,23 +222,15 @@
         </section>
 
         <section class="documents">
-          <div class="for-contractors">
             <div class="icon-heart"></div>
-            <a href="#">Для поставщиков</a>
-          </div>
-          <div class="about-manufacturing">
-            <a href="#">О производстве</a>
-          </div>
-          <div class="docs">
-            <a href="#">Наши документы</a>
-          </div>
-          <div class="ecology">
-            <a href="#">Экологические стандарты</a>
-          </div>
+            <a class="for-contractors" href="#">Для поставщиков</a>
+            <a class="about-manufacturing" href="#">О производстве</a>
+            <a class="docs" href="#">Наши документы</a>
+            <a class="ecology" href="#">Экологические стандарты</a>
         </section>
 
         <section class="copyright">
-          <img src="http://placehold.it/150x100" alt="Логотип HTML Academy">
+          <img src="img/logo_html.png" alt="Логотип HTML Academy">
           <p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
         </section>
       </div>

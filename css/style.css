@@ -4,10 +4,231 @@ body {
   line-height: 22px;
   color: #000000;
   font-family: "Roboto", "Arial", serif;
+  background-color: #849d8f;
 }
 
 h1,h2 {
   font-size: 35px;
   line-height: 41px;
   font-weight: bold;
+}
+
+.clearfix::after {
+  content: "";
+
+  display: table;
+  clear: both;
+}
+
+.container{
+  width: 860px;
+  padding: 0 20px;
+  margin: 0 auto;
+  
+  outline: black solid;
+}
+
+.logo-img{
+	float: left;
+	background-color: black;
+}
+.main-menu{
+	float: left;
+	width: 370px;
+	padding: 0 10px;
+}
+
+.main-nav ul{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+
+    outline: black solid;
+}
+
+.main-menu li,
+.additional-menu li{
+	display: inline-block;
+}
+
+.sub-menu{
+	display: none;
+}
+
+.additional-menu{
+	float: right;
+	width: 270px;
+
+	margin: 0;
+    padding: 0;
+    list-style: none;
+
+    outline: black solid;
+}
+
+.header-contacts{
+	float: right;
+	width: 180px;
+	margin-top: 20px;
+
+	outline: black solid;
+}
+
+.slider {
+	margin-bottom: 40px;
+	text-align: center;
+
+	outline: black solid;
+}
+.slider input {
+	display: none;
+}
+
+.slider-controls label{
+	display: inline-block;
+	width: 17px;
+    height: 17px;
+
+	/*position: relative;*/
+
+	outline: black solid;
+}
+
+.slide-title{
+	width: 700px;
+	margin: 0 auto 30px;
+
+	outline: black solid;
+}
+
+.slide-btn{
+	display: inline-block;
+	vertical-align: top;
+
+	outline: black solid;
+}
+
+.addition-raspberry{
+	float: left;
+	width: 420px;
+
+	outline: black solid;	
+}
+
+.addition-chocolate{
+	float: right;
+	width: 420px;
+	margin-bottom: 35px;
+	
+	outline: black solid;	
+}
+
+.popular-items{
+	clear: both;
+	margin-bottom: 35px; 
+}
+
+.popular-item{
+	display: inline-block;
+	vertical-align: top;
+	width: 200px; 
+
+	outline: black solid;
+}
+
+.popular-item figure{
+	padding: 0px;
+	margin: 0px;
+
+	outline: black solid;
+}
+
+.shop-features{
+	padding: 20px;
+	margin-bottom: 40px;
+
+	outline: black solid;
+}
+
+.shop-definition{
+	font-size: 24px;
+  	line-height: 30px;
+
+	width: 700px;
+}
+
+.shop-features ul{
+	margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.shop-features li{
+	display: inline-block;
+	vertical-align: top;
+	width: 340px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+	padding-left: 55px;
+
+	outline: black solid;
+}
+
+.shop-features li:nth-child(2n){
+	margin-right: 0px;
+}
+
+.blog-and-subscription{
+	margin-bottom: 35px;
+}
+
+.new-in-blog{
+	float: left;
+	width: 420px;
+
+	outline: black solid;
+}
+
+.subscription{
+	float: right;
+	width: 420px;
+	
+	outline: black solid;
+}
+
+.contacts{
+	/*position: relative;*/
+	width: 300px;
+	padding: 35px;
+
+	outline: black solid;
+}
+
+.social{
+	float: left;
+	width: 250px;
+}
+
+.social a{
+	display: inline-block;
+}
+
+.documents{
+	float: left;
+	width: 350px;
+
+	outline: black solid;
+}
+
+.documents a{
+	display: inline-block;
+
+	outline: black solid;
+}
+
+.copyright{
+	float: right;
+	width: 250px;
+	
+	outline: black solid;
 }
