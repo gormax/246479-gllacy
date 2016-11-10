@@ -128,7 +128,7 @@ h1,h2 {
 	margin-bottom: 35px; 
 }
 
-.popular-item{
+.item{
 	display: inline-block;
 	vertical-align: top;
 	width: 200px; 
@@ -136,7 +136,7 @@ h1,h2 {
 	outline: black solid;
 }
 
-.popular-item figure{
+.item figure{
 	padding: 0px;
 	margin: 0px;
 
@@ -231,4 +231,47 @@ h1,h2 {
 	width: 250px;
 	
 	outline: black solid;
+}
+
+.paginator{	
+	margin: 0;
+    padding: 0;
+    list-style: none;
+
+    outline: black solid;
+}
+
+.paginator li{
+	display: inline-block;
+}
+
+/*----------------catalog*----------------*/
+
+.breadcrumbs{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.catalog-selection label,
+.catalog-selection button {
+	display: inline-block;
+	vertical-align: bottom;
+	margin-bottom: 20px;
+	margin-right: 20px;
+
+	outline: black solid;
+}
+
+.catalog-sort select{
+	display: block;
+}
+
+.catalog-price-range input{
+	display: block;
 }

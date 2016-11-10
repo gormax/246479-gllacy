@@ -8,8 +8,10 @@
   <body>
 
     <header class="main-header">
-      <div class="container">
-        <a href="index.html"><img src="img/logo.png" width="100" height="50" alt="Логотип компании"></a>
+      <div class="container clearfix">
+        <div class="logo-img">
+          <a href="index.html"><img src="img/logo.png" width="100" height="50" alt="Логотип компании"></a>
+        </div>
         <nav class="main-nav">
           <ul class="main-menu">
             <li class="current-item">
@@ -41,21 +43,19 @@
           </ul>
         </nav>
 
-        <nav class="additional-nav">
-          <ul>
-            <li>
-              <a href="#">Поиск</a>
-            </li>
-            <li>
-              <a href="#">Авторизация</a>
-            </li>
-            <li>
-              <a href="#">Корзина</a>
-            </li>
-          </ul>
-        </nav>
+        <ul class="additional-menu">
+          <li>
+            <a href="#">Поиск</a>
+          </li>
+          <li>
+            <a href="#">Авторизация</a>
+          </li>
+          <li>
+            <a href="#">Корзина</a>
+          </li>
+        </ul>
 
-        <div>
+        <div class="header-contacts">
           <p class="working-hours">С 10 до 20, ежедневно</p>
           <p class="telephone">8 812 450-25-25</p>
         </div>
@@ -63,85 +63,67 @@
     </header>
 
     <main>
-      <div class="container">
-        <header class="catalog-header">
-          <nav class="breadcrumbs">
-            <ul class="breadcrumbs-nav-list">
-              <li>
-                <a href="index.html">Главная</a>
-              </li>
-              <li>
-                <a href="#">Каталог</a>
-              </li>
-              <li>
-                Сливочное
-              </li>
-            </ul>
-          </nav>
-          <h1>Сливочное мороженное</h1>
-        </header>
+      <div class="container clearfix">
+       
+       <ul class="breadcrumbs">
+          <li>
+            <a href="index.html">Главная</a>
+          </li>
+          <li>
+            <a href="#">Каталог</a>
+          </li>
+          <li>
+            Сливочное
+          </li>
+        </ul>
+
+        <h1>Сливочное мороженное</h1>
 
         <form class="catalog-selection" action="https://echo.htmlacademy.ru" method="get">
-          <div class="catalog-sort">
-            <label for="sort">Сортировка:</label>
+          <label class="catalog-sort" for="sort">Сортировка:
             <select id="sort" name="sort">
               <option value="popular">по популярности</option>
               <option value="low-price">сначала недорогие</option>
               <option value="high-price">сначала дорогие</option>
               <option value="fatness">по жирности</option>
             </select>
-          </div>
+          </label>
           <label class="catalog-price-range">
-            Сортировка:
+            Цена:
             <input type="range" id="price-range" name="price-range" min="0" max="700">
           </label>
           <label class="catalog-fatness-select">
             Жирность:
-            <div>
+            <div class="catalog-background">
               <input type="radio" id="fatness-select" name="fatness-select" value="0">
               0%
-            </div>
-            <div>
               <input type="radio" id="fatness-select" name="fatness-select" value="10" checked>
               до 10%
-            </div>
-            <div>
               <input type="radio" id="fatness-select" name="fatness-select" value="30">
               до 30%
-            </div>
-            <div>
               <input type="radio" id="fatness-select" name="fatness-select" value="31">
               выше 30%
             </div>
           </label>
           <label class="catalog-filler-select">
             Наполнители:
-            <div>
+            <div class="catalog-background">
               <input type="checkbox" id="filler-select" name="chocolate" checked>
-              шоколадные
-            </div>
-            <div>
+                шоколадные
               <input type="checkbox" id="filler-select" name="sugare" checked>
-              сахарные присыпки
-            </div>
-            <div>
+                сахарные присыпки
               <input type="checkbox" id="filler-select" name="fruts">
-              фрукты
-            </div>
-            <div>
+                фрукты
               <input type="checkbox" id="filler-select" name="syrup">
-              сиропы
-            </div>
-            <div>
+                сиропы
               <input type="checkbox" id="filler-select" name="jam">
-              джемы
+                джемы
             </div>
           </label>
           <button type="submit">
              Применить
           </button>
         </form>
-
 
         <section class="item-list">
 
@@ -266,37 +248,35 @@
           </article>
         </section>
 
-        <div class="paginator">
-          <ul class="paginator-items">
-            <li class="prev disabled">
-              <a href="#">Назад</a>
-            </li>
-            <li class="current-page">
-              1
-            </li>
-            <li>
-              <a href="#">2</a>
-            </li>
-            <li>
-              <a href="#">3</a>
-            </li>
-            <li>
-              <a href="#">4</a>
-            </li>
-            <li>
-              <a href="#">5</a>
-            </li>
-            <li class="next">
-              <a href="#">Вперед</a>
-            </li>
-          </ul>
-        </div>
+        <ul class="paginator">
+          <li class="prev disabled">
+            <a href="#">Назад</a>
+          </li>
+          <li class="current-page">
+            1
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">4</a>
+          </li>
+          <li>
+            <a href="#">5</a>
+          </li>
+          <li class="next">
+            <a href="#">Вперед</a>
+          </li>
+         </ul>
 
       </div>
     </main>
 
     <footer class="main-footer">
-      <div class="container">
+      <div class="container clearfix">
         <section class="social">
           <a class="social-btn social-btn-tw" href="#">Твиттер</a>
           <a class="social-btn social-btn-inst" href="#">Инстаграмм</a>
@@ -305,14 +285,15 @@
         </section>
 
         <section class="documents">
-          <a class="for-contractors" href="#"><span class="icon-heart"></span>Для поставщиков</a>
-          <a class="about-manufacturing" href="#">О производстве</a>
-          <a class="docs" href="#">Наши документы</a>
-          <a class="ecology" href="#">Экологические стандарты</a>
+            <div class="icon-heart"></div>
+            <a class="for-contractors" href="#">Для поставщиков</a>
+            <a class="about-manufacturing" href="#">О производстве</a>
+            <a class="docs" href="#">Наши документы</a>
+            <a class="ecology" href="#">Экологические стандарты</a>
         </section>
 
         <section class="copyright">
-          <img src="http://placehold.it/150x100" alt="Логотип HTML Academy">
+          <img src="img/logo_html.png" alt="Логотип HTML Academy">
           <p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
         </section>
       </div>
