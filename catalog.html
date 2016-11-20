@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_min.css">
   </head>
   <body>
 
@@ -18,36 +18,37 @@
           </div>
           <nav class="main-nav">
             <ul class="main-nav-list">
-              <li class="current-page">
+              <li class="main-nav-item current-page">
                 <a href="#">Каталог</a>
                 <ul class="sub-menu">
-                  <li>
+                  <li class="sub-menu-item">
                     <a href="#">Новинки</a>
                   </li>
-                  <li class="current-page">
+                  <li class="sub-menu-item current-page">
                     <a href="catalog.html">Сливочное</a>
                   </li>
-                  <li>
+                  <li class="sub-menu-item">
                     <a href="#">Щербеты</a>
                   </li>
-                  <li>
+                  <li class="sub-menu-item">
                     <a href="#">Фруктовый лед</a>
                   </li>
-                  <li>
+                  <li class="sub-menu-item">
                     <a href="#">Мелорин</a>
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="main-nav-item">
                 <a href="#">Доставка и оплата</a>
               </li>
-              <li>
+              <li class="main-nav-item">
                 <a href="#">О Компании</a>
               </li>
             </ul>
           </nav>
 
           <div class="additional-menu">
+
             <div class="additional-menu-item">
               <a class="search-btn" href="#"></a>
               <form class="search-form" action="#" method="get">
@@ -70,7 +71,42 @@
 
             <div class="additional-menu-item">
               <a class="cart-btn item-in-cart" href="#">2 товара</a>
+              <!-- <div class="cart-form" action="#" method="get"> -->
+              <div class="cart-form">
+                <div class="cart-item">
+                  <button class="cart-item-delete"></button>
+                  <div class="cart-item-title cart-item-title-1">
+                    Пломбир с апельсиновым джемом
+                  </div>
+                  <div class="cart-item-count">
+                    1,5 кг x <span class="cost-per-kg">200 руб.</span>
+                  </div>
+                  <div class="cart-item-worth">
+                   300 руб.
+                  </div>
+                </div>
+
+                <div class="cart-item">
+                  <button class="cart-item-delete"></button>
+                  <div class="cart-item-title cart-item-title-2">
+                    Клубничный пломбир с присыпкой из белого шоколада
+                  </div>
+                  <div class="cart-item-count">
+                    1,5 кг x <span class="cost-per-kg">300 руб.</span>
+                  </div>
+                  <div class="cart-item-worth">
+                    450 руб.
+                  </div>
+                </div>
+
+                <div class="total">
+                  Итого: 750 руб.
+                </div>
+                  <!-- <div class="clearfix"></div> -->
+                <a class="red-btn" href="#">Оформить заказ</a>
+              </div>
             </div>
+
           </div>
 
           <div class="header-contacts">
@@ -323,7 +359,7 @@
         </section>
 
         <section class="copyright">
-          <img src="img/logo_html.png" alt="Логотип HTML Academy">
+          <img src="img/logo_html.png" width="108" height="38" alt="Логотип HTML Academy">
           <p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
         </section>
       </div>

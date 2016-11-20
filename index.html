@@ -5,7 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/style_min.css">
   </head>
   <body>
 
@@ -22,30 +22,30 @@
           </div>
           <nav class="main-nav">
             <ul class="main-nav-list">
-              <li>
+              <li class="main-nav-item">
                 <a href="#">Каталог</a>
                 <ul class="sub-menu">
-                  <li>
+                  <li class="sub-menu-item">
                     <a href="#">Новинки</a>
                   </li>
-                  <li>
+                  <li class="sub-menu-item">
                     <a href="catalog.html">Сливочное</a>
                   </li>
-                  <li>
+                  <li class="sub-menu-item">
                     <a href="#">Щербеты</a>
                   </li>
-                  <li>
+                  <li class="sub-menu-item">
                     <a href="#">Фруктовый лед</a>
                   </li>
-                  <li>
+                  <li class="sub-menu-item">
                     <a href="#">Мелорин</a>
                   </li>
                 </ul>
               </li>
-              <li>
+              <li class="main-nav-item">
                 <a href="#">Доставка и оплата</a>
               </li>
-              <li>
+              <li class="main-nav-item">
                 <a href="#">О Компании</a>
               </li>
             </ul>
@@ -192,7 +192,7 @@
               <a href="#">10&nbsp;&nbsp;cпособов сервировки<br>фруктовых щербетов к<br>столу</a>
             </article>
 
-            <div class="outer-subscription">
+            <div class="subscription-wrap">
               <form class="subscription" action="https://echo.htmlacademy.ru" method="post">
                 <p>Подпишитесь на нашу сладкую рассылку и&nbsp;будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой не нужной ерунды. Честно =)</p>
                 <input type="email" name="email" placeholder="Электронная почта">
@@ -217,7 +217,7 @@
                 <span>8 812 450-25-25</span>
                 (с 10 до 20 ежедневно)
               </p>
-              <a class="red-btn" href="#">Форма обратной связи</a>
+              <a class="red-btn contact-btn" href="#">Форма обратной связи</a>
             </div>
           </div>
           <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Oxi0cKlF6IK_o8DlInlrRCXMO2mEWYLp&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script>
@@ -242,7 +242,7 @@
           </section>
 
           <section class="copyright">
-            <img src="img/logo_html.png" alt="Логотип HTML Academy">
+            <img src="img/logo_html.png" width="108" height="38" alt="Логотип HTML Academy">
             <p>Сделано в <a href="#">HTML Academy</a> &copy; 2016</p>
           </section>
         </div>
@@ -250,30 +250,24 @@
 
     </div>
 
-            <div class="feedback-background">
-              <div class="feedback">
-                <h3>Мы обязательно вам ответим!</h3>
-                <button class="close-btn" type="button"></button>
-                <form action="https://echo.htmlacademy.ru" method="post">
-                  <input class="text name" type="text" name="name" id="feedback-form-name">
-                  <div class="placeholder">
-                    <label for="feedback-form-name">Как вас зовут?</label>
-                  </div>
+    <div class="feedback">
+      <h3>Мы обязательно вам ответим!</h3>
+      <button class="close-btn" type="button"></button>
 
-                  <input class="text mail" type="email" name="email" id="feedback-form-email">
-                  <div class="placeholder">
-                    <label for="feedback-form-email">Ваша почта для ответа?</label>
-                  </div>
+      <form action="https://echo.htmlacademy.ru" method="post">
+        <input class="text" type="text" name="name" id="feedback-form-name" placeholder="Как вас зовут?">
+        <span class="fakePlaceholder fakeName">Как вас зовут?</span>
 
-                  <textarea class="text comment" cols="30" rows="5" name="text" id="feedback-form-text"></textarea>
-                  <div class="placeholder">
-                    <label class="label-comment" for="feedback-form-text">Напишите что-нибудь...</label>
-                  </div>
+        <input class="text" type="email" name="email" id="feedback-form-email" placeholder="Ваша почта для ответа?">
+        <span class="fakePlaceholder fakeEmail">Ваша почта для ответа?</span>
 
-                  <button class="feedback-form-btn  red-btn" type="submit">Отправить</button>
-                </form>
-              </div>
-            </div>
+        <textarea class="text" cols="30" rows="5" name="text" id="feedback-form-text" placeholder="Напишите что-нибудь..."></textarea>
+        <span class="fakePlaceholder fakeFeedBack">Напишите что-нибудь...</span>
 
+        <button class="feedback-form-btn  red-btn" type="submit">Отправить</button>
+      </form>
+    </div>
+
+    <script type="text/javascript" src="js/index-popup_min.js"></script>
   </body>
 </html>
