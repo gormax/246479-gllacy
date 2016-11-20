@@ -410,10 +410,15 @@ a:active{
   background-position: -10px -10px;
 }
 
-.additional-menu .cart-btn:hover::before{
+.additional-menu .cart-btn:hover::before,
+.additional-menu .item-in-cart::before{
   background-position: -51px -10px;
 }
 
+.additional-menu .item-in-cart{
+  color: #000000;
+  background-color: #f8f7f4;
+}
 
 .header-contacts{
 	float: right;
@@ -1186,6 +1191,10 @@ a:active{
   border-radius: 50%;
   background-color: #f8f7f4;
   box-shadow: 0 1px 1px rgba(105,105,105,.6);
+}
+
+.catalog-price-range .price-toggle:hover{
+  cursor: pointer;
 }
 
 .catalog-price-range .price-toggle-min{
