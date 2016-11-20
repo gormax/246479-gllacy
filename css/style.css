@@ -156,6 +156,7 @@ a:active{
   padding: 0;
   list-style: none;
 
+  /*border-top: 20px solid transparent;*/
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0,0,0,.4);
@@ -671,9 +672,6 @@ a:active{
   width: 60px;
   height: 60px;
   border-radius: 50%;
-
-/*  left: 0px;
-  top: 0px;*/
 }
 
 .item .price{
@@ -684,6 +682,10 @@ a:active{
   font-size: 45px;
   line-height: 45px;
   font-weight: 700;
+}
+
+.item .price:hover{
+  cursor: pointer;
 }
 
 .item .price span{
