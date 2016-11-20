@@ -273,8 +273,13 @@ a:active{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-position: -546px -10px;
+  background-position: -587px -10px;
 }
+
+.additional-menu .search-btn:hover::before{
+  background-position: -624px -10px;
+}
+
 
 .additional-menu .search-form{
   display: none;
@@ -322,9 +327,8 @@ a:active{
   background-position: -505px -10px;
 }
 
-.additional-menu .login-btn:hover + .login-form,
-.additional-menu .login-form:hover{
-  display: block;
+.additional-menu .login-btn:hover::before{
+  background-position: -546px -10px;
 }
 
 .additional-menu .login-form{
@@ -339,6 +343,11 @@ a:active{
   background-color: #f8f7f4;
   border-radius: 5px;
   box-shadow: 0 20px 20px 0 rgba(0,0,0,.2);
+}
+
+.additional-menu .login-btn:hover + .login-form,
+.additional-menu .login-form:hover{
+  display: block;
 }
 
 .additional-menu .login-form input[type="email"],
@@ -399,6 +408,10 @@ a:active{
   top: 6px;
   left: 18px;
   background-position: -10px -10px;
+}
+
+.additional-menu .cart-btn:hover::before{
+  background-position: -51px -10px;
 }
 
 
@@ -972,7 +985,7 @@ a:active{
 }
 
 .social .social-btn-tw::before{
-  background-position: -583px -10px;
+  background-position: -719px -10px
 }
 
 .social .social-btn-inst::before{
@@ -984,7 +997,7 @@ a:active{
 }
 
 .social .social-btn-vk::before{
-  background-position: -636px -10px;
+  background-position: -772px -10px;
 }
 
 
@@ -1329,10 +1342,11 @@ a:active{
   background-color: #fafbfb;
   cursor: pointer;
 }
-/*.paginator-wrap{
-  margin: 0 auto;
-  min-width: 900px;
-}*/
+
+
+.paginator-wrap{
+  border-bottom: 1px solid #ffffff;
+}
 
 .paginator{
   float: right;
@@ -1341,23 +1355,53 @@ a:active{
   list-style: none;
 
   font-size: 0;
-  margin-top: 50px;
+  margin-top: 52px;
   margin-bottom: 30px;
 }
 
 .paginator li{
+  position: relative;
   display: inline-block;
   vertical-align: top;
 
   height: 27px;
   width: 27px;
-  margin-right: 2px;
+  margin-right: 5px;
   border-radius: 50%;
   text-align: center;
 }
 
 .paginator li:last-of-type{
   margin-right: 0px;
+  width: 10px;
+}
+
+.paginator li:first-of-type::before{
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 14px;
+
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -690px -10px;
+
+  left: 10px;
+  top: 5px;
+}
+
+.paginator li:last-of-type::before{
+  content: "";
+  position: absolute;
+  width: 9px;
+  height: 14px;
+
+  background-image: url(../img/sprite.png);
+  background-repeat: no-repeat;
+  background-position: -661px -10px;
+
+  left: 5px;
+  top: 5px;
 }
 
 .paginator a{
