@@ -36,7 +36,7 @@ body
 
     display: block;
 
-    height: 46px;
+    height: 44px;
     padding: 0 20px;
 
     text-decoration: none;
@@ -131,7 +131,7 @@ textarea:focus::-webkit-input-placeholder
     font-size: 0;
 }
 
-.fakePlaceholder
+.upper-placeholder
 {
     font-size: 11px;
     font-weight: 300;
@@ -142,8 +142,8 @@ textarea:focus::-webkit-input-placeholder
     visibility: hidden;
 }
 
-input:focus + .fakePlaceholder,
-textarea:focus + .fakePlaceholder
+input:focus + .upper-placeholder,
+textarea:focus + .upper-placeholder
 {
     visibility: visible;
 
@@ -171,7 +171,7 @@ textarea:focus + .fakePlaceholder
     float: left;
 
     min-width: 370px;
-    margin-top: 24px;
+    margin-top: 22px;
     margin-left: 16px;
 }
 
@@ -465,9 +465,9 @@ textarea:focus + .fakePlaceholder
     width: 100%;
 }
 
-.search-form .fakeSearch
+.search-form .upper-search
 {
-    top: 4px;
+    top: 2px;
     left: -15px;
 
     width: 100px;
@@ -521,17 +521,17 @@ textarea:focus + .fakePlaceholder
     margin: 10px 0;
 }
 
-.fakeEmailTop
+.upper-email
 {
     position: absolute;
     top: 5px;
     left: 25px;
 }
 
-.fakePasswordTop
+.upper-password
 {
     position: absolute;
-    top: 65px;
+    top: 67px;
     left: 25px;
 }
 
@@ -808,13 +808,13 @@ textarea:focus + .fakePlaceholder
 {
     position: relative;
 
-    margin-bottom: 42px;
+    margin-bottom: 41px;
     padding-top: 235px;
 }
 
 .slide-list
 {
-    padding-left: 24px;
+    /*padding-left: 24px;*/
 }
 
 .slide-1,
@@ -913,6 +913,7 @@ textarea:focus + .fakePlaceholder
     line-height: 60px;
 
     margin-bottom: 30px;
+    text-align: center;
 }
 
 .slider .slide-btn
@@ -922,7 +923,7 @@ textarea:focus + .fakePlaceholder
 
     width: 200px;
     height: 63px;
-    margin-left: 195px;
+    margin-left: 205px;
     padding: 0 40px;
 
     text-align: center;
@@ -960,7 +961,7 @@ textarea:focus + .fakePlaceholder
     padding-top: 15px;
     padding-bottom: 25px;
 
-    border-radius: 10px;
+    border-radius: 15px;
 }
 
 .addition h2
@@ -1141,17 +1142,17 @@ textarea:focus + .fakePlaceholder
 .shop-features
 {
     margin-top: 10px;
-    margin-bottom: 40px;
+    margin-bottom: 39px;
     padding: 20px;
     padding-top: 22px;
     padding-bottom: 0;
 
     color: #000;
-    border-radius: 10px;
+    border-radius: 15px;
     background-color: #eadcc1;
     background-image: url(../img/index_wafer_background.jpg);
 
-    ьшт-height: 330px;
+    min-height: 330px;
 }
 
 .shop-features h2
@@ -1240,6 +1241,7 @@ textarea:focus + .fakePlaceholder
     width: 380px;
     height: 180px;
     padding: 20px;
+    padding-top: 18px;
 
     border-radius: 15px;
     background-image: url(../img/index_raspberry_background_900.jpg);
@@ -1296,9 +1298,9 @@ textarea:focus + .fakePlaceholder
     position: relative;
 
     box-sizing: border-box;
-    padding-top: 30px;
+    padding-top: 26px;
     padding-right: 15px;
-    padding-bottom: 30px;
+    padding-bottom: 32px;
     padding-left: 20px;
 
     border-radius: 10px;
@@ -1312,7 +1314,7 @@ textarea:focus + .fakePlaceholder
     line-height: 22px;
 
     margin: 0;
-    margin-bottom: 14px;
+    margin-bottom: 16px;
 
     color: #5a5a5a;
 }
@@ -1327,10 +1329,10 @@ textarea:focus + .fakePlaceholder
     vertical-align: top;
 }
 
-.fakeEmailSubscription
+.upper-email-subscription
 {
     position: absolute;
-    bottom: 75px;
+    bottom: 77px;
     left: 25px;
 }
 
@@ -1362,13 +1364,13 @@ textarea:focus + .fakePlaceholder
 {
     position: absolute;
     z-index: 10;
-    top: 60px;
+    top: 62px;
     right: 20px;
 
     width: 250px;
     min-height: 253px;
     padding: 28px 25px;
-    padding-bottom: 20px;
+    padding-bottom: 24px;
 
     color: #323232;
     border-radius: 15px;
@@ -1378,50 +1380,40 @@ textarea:focus + .fakePlaceholder
 .contacts p
 {
     font-size: 14px;
-    font-weight: 300px;
+    font-weight: 300;
     line-height: 20px;
 
     margin: 0;
-    margin-bottom: 23px;
+    
 
     color: #323232;
+}
+
+.contacts .adress{
+   margin-bottom: 19px; 
 }
 
 .contacts span
 {
     font-size: 18px;
-    font-weight: 300px;
+    font-weight: 700;
     line-height: 24px;
 
     display: block;
 
-    margin: 4px 0  /*margin-bottom: 25px;*/px;
+    margin: 2px 0px;
 }
 
 .contacts a
 {
-    height: 22px;
+    height: 23px;
     margin-top: 25px;
     padding-top: 10px;
-    padding-bottom: 10px;
+    padding-bottom: 11px;
+    padding-left: 25px;
+    padding-right: auto;
 
     text-align: center;
-}
-
-.contacts::after
-{
-    position: absolute;
-    z-index: 10;
-    top: 150px;
-    left: -315px;
-
-    width: 218px;
-    height: 142px;
-
-    content: '';
-
-    background-image: url('../img/map_marker.png');
-    background-repeat: no-repeat;
 }
 /*-----------MAP-----------*/
 
@@ -2123,23 +2115,23 @@ textarea:focus + .fakePlaceholder
     color: #fff;
 }
 
-.feedback .fakePlaceholder
+.feedback .upper-placeholder
 {
     left: 38px;
 }
 
-.fakeName
+.upper-name-feedback
 {
-    top: 50px;
+    top: 52px;
 }
 
-.fakeEmail
+.upper-email-feedback
 {
-    top: 113px;
+    top: 114px;
 }
 
-.fakeFeedBack
+.upper-textarea-feedback
 {
-    top: 178px;
+    top: 176px;
 }
 /*----------------FEEDBACK----------------*/
