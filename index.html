@@ -226,7 +226,9 @@
               <a class="red-btn contact-btn" href="/feedback">Форма обратной связи</a>
             </div>
           </div>
-          <!-- <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Oxi0cKlF6IK_o8DlInlrRCXMO2mEWYLp&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true"></script> -->
+          <div id="yandex-map">
+          </div>
+
         </section>
 
       </main>
@@ -257,12 +259,13 @@
     </div>
 
     <div class="feedback-background">
+    </div>
     <div class="feedback">
       <h3>Мы обязательно вам ответим!</h3>
       <button class="close-btn" type="button"></button>
 
       <form action="https://echo.htmlacademy.ru" method="post">
-        <input class="text" type="text" name="name" id="feedback-form-name" placeholder="Как вас зовут?">
+        <input class="text name" type="text" name="name" id="feedback-form-name" placeholder="Как вас зовут?">
         <span class="upper-placeholder upper-name-feedback">Как вас зовут?</span>
 
         <input class="text" type="email" name="email" id="feedback-form-email" placeholder="Ваша почта для ответа?">
@@ -274,8 +277,8 @@
         <button class="feedback-form-btn  red-btn" type="submit">Отправить</button>
       </form>
     </div>
-    </div>
 
     <script type="text/javascript" src="js/index-popup.js"></script>
+    <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=Oxi0cKlF6IK_o8DlInlrRCXMO2mEWYLp&amp;width=100%25&amp;height=430&amp;lang=ru_RU&amp;sourceType=constructor&amp;scroll=true&id=yandex-map"></script>
   </body>
 </html>
