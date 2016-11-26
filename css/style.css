@@ -497,7 +497,7 @@ textarea:focus + .upper-placeholder
 
 .search-form .upper-search
 {
-    top: 2px;
+    top: 5px;
     left: -15px;
 
     width: 100px;
@@ -538,6 +538,7 @@ textarea:focus + .upper-placeholder
 
     width: 240px;
     padding: 10px 16px;
+    padding-bottom: 20px;
 
     border-radius: 5px;
     background-color: #f8f7f4;
@@ -548,20 +549,21 @@ textarea:focus + .upper-placeholder
 .login-form input[type='password']
 {
     width: 100%;
-    margin: 10px 0;
+    margin: 12px 0;
+    margin-bottom: 10px;
 }
 
 .upper-email
 {
     position: absolute;
-    top: 5px;
+    top: 8px;
     left: 25px;
 }
 
 .upper-password
 {
     position: absolute;
-    top: 67px;
+    top: 71px;
     left: 25px;
 }
 
@@ -569,7 +571,8 @@ textarea:focus + .upper-placeholder
 {
     float: left;
 
-    margin-top: 5px;
+    margin-top: 10px;
+    padding: 0 25px;
 }
 
 .login-form .login-links
@@ -577,7 +580,7 @@ textarea:focus + .upper-placeholder
     float: right;
 
     width: 120px;
-    margin-top: 5px;
+    margin-top: 10px;
 
     text-align: left;
 }
@@ -890,7 +893,7 @@ textarea:focus + .upper-placeholder
     background-color: #8996a6;
     background-image: url(../img/index_bkcgr_2.png);
     background-repeat: no-repeat;
-    background-position: -20px 0;
+    background-position: 50% 0;
 }
 
 .toggle-background-3:checked ~ .index-background
@@ -898,7 +901,7 @@ textarea:focus + .upper-placeholder
     background-color: #a7958e;
     background-image: url(../img/index_bkcgr_3.png);
     background-repeat: no-repeat;
-    background-position: 15px 0;
+    background-position: 50% 0;
 }
 
 .slider-controls
